@@ -18,10 +18,10 @@
           <a href="page-2.html">ABOUT</a>
         </li>
         <li>
-          <a href="page-3.html">CONTACT</a>
+          <a href="page-3.html">SUPPLIES</a>
         </li>
         <li>
-          <a href="#" class="active-page">PORTFOLIO</a>
+          <a href="page-4.html" class="active-page">PORTFOLIO</a>
         </li>
         <li>
           <a href="page-5.html">HISTORY</a>
@@ -37,13 +37,157 @@
       <div class="dropdown-content">
         <a href="index.html">ALIZA MAYNARD</a>
         <a href="Page-2.html">ABOUT</a>
-        <a href="Page-3.html">CONTACT</a>
-        <a href="#" class="active-menu-item">PORTFOLIO</a>
+        <a href="Page-3.html">SUPPLIES</a>
+        <a href="page-4.html" class="active-menu-item">PORTFOLIO</a>
         <a href="Page-5.html">HISTORY</a>
         <a href="Page-6.html">INFLUENCES</a>
       </div>
     </div>
   </nav>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scrollable Area</title>
+    <style>
+      div.scrolling {
+        width: 500px;
+        height: 300px;
+        padding: 20px;
+        border: none;
+        overflow: auto;
+        /* auto - similar to scroll, but it adds scrollbars only when necessary */
+        /* overflow is shortcut for overflow-y and overflow-x */
+        /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_overflow-x */
+        /* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+      }
+    </style>
+  </head>
+  
+<head>
+<title>PORTFOLIO</title>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right:100px;
+  padding-bottom: 0px;
+
+}
+
+.slick-next:before,
+.slick-prev:before {
+  position:relative;
+  color:#ff3806;
+  padding-top:0px
+}
+
+.image-responsive {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+
+.slick-list {
+  margin: 0 5px;
+}
+
+.slick-slide {
+  padding: 0 5px;
+}
+
+.your-class div p {
+  margin: 5px 0 0;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1>
+</h1>
+
+<div class="container">
+<div class="your-class">
+  
+  <div>
+    <img class="image-responsive" src="./assets/images/IMG_4506.jpg" />
+  </div>
+  <div>
+    <img class="image-responsive" src="./assets/images/IMG_2472.jpg" />
+  </div>
+  <div>
+    <img class="image-responsive" src="./assets/images/IMG_2382.jpg" />
+  </div>
+  <div>
+    <img class="image-responsive" src="./assets/images/12DA2428-F574-4577-8A9E-A203DA338A46.jpg" />
+  </div>
+  <div>
+    <img class="image-responsive" src="./assets/images/IMG_4519.jpg" />
+  </div>
+  <div>
+    <img class="image-responsive" src="./assets/images/IMG_4509.jpg" />
+  </div>
+  <div>
+    <img class="image-responsive" src="./assets/images/603310C2-E97A-4B6A-ADDF-EDCE7C652B5F.JPG" />
+  </div>
+  <div>
+    <img class="image-responsive" src="./assets/images/IMG_6061.jpg" />
+  </div>
+  <div>
+    <img class="image-responsive" src="./assets/images/IMG_5772.JPG" />
+  </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+$(document).ready(function () {
+  $('.your-class').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+});
+</script>
+</body>
+  <body>
+    <article>
+      <h3>ABOUT THE WORK</h3>
+      <div class="scrolling">
+        <p>
+         When I found printmaking I was not prepared for the effect it would have on my practice. I took a class at UCLA in intaglio printmaking,
+         which is the process of applying a ground to a copper plate, drawing your image using an etching tool, and the area you carved away
+         is what will then be etched into the plate when applied to acid. The drawing itself will become a divet in the plate, providing a space for the ink to sit in before printing. 
+         The lovely thing about this technique is that everything is reversed once printed. Think of a stamp. <br><br>Depedning on the ground used, 
+         the print will have more or less textural qualities. Softground is sensitive, making any small touch on the plate cause a mark which will then be etched and visible in the final print. 
+         My favorite thing about this medium is it's unpredicatablity. You may spend hours drawing your image, and once printed it presents completely differently. <br><br>
+         This has assisted me spectacularly because I have a tendency to need control. This obsession with perfection restricts my work, at times can make it work for me, 
+         but the result I prefer does not align with this process. Printmaking has given me the freedom to experiment and no matter how great the image itself is, the 
+         additonal textures and effects caused by the process alone leave me greatly satisfied. 
+        </p>
+        <p>
+          My work is always in flux. I don't like to hold myself to any specific exploration. Whatever interests me, monthly, daily, hourly, is what guides my process.
+          I am fascinated with form, mundanity, everyday expereinces, and childhood. There will always be more, or less, incorporated, but I prefer to let the viewer decide for themselves
+          what the work is evoking. Since I already tend to overthink, I like my practice to be fluid and spontaneous. Hopefully that translates, while technique is 
+          absolutely valued along the way. 
+        </p>
+      </div>
+    </article>
+  </body>
+  
   <section style="width: auto; padding:20px;">
     <article style="width: 70%; float: left; ">
       <div style="border-right: 1px solid rgb(181, 181, 181);">
@@ -60,14 +204,15 @@
   <div class="to-top"><a href="#">Top</a></div>
   <footer style="width: 100%;">
     <div class="social-icon">
-      <!-- Facebook -->
-      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-small padding-right"></a>
-      <!--Instagram-->
-      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-small padding-right"></a>
-      <!-- Twitter -->
-      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-small padding-right"></a>
-      <!-- Linkedin -->
-      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-small padding-right"></a>
+   <!-- Facebook -->
+   <a href="https://www.facebook.com/aliza.maynard/" target="_blank" class="fa fa-facebook-f fa-lg fa-small padding-right">
+  </a>
+  <!--Instagram-->
+  <a href="https://www.instagram.com/alizamaynard" target="_blank" class="fa fa-instagram fa-lg fa-small padding-right"></a>
+  <!-- Twitter -->
+  <a href="https://twitter.com/" target="_blank" class="fa fa-twitter fa-lg fa-small padding-right"></a>
+  <!-- Linkedin -->
+  <a href="https://www.linkedin.com/in/aliza-maynard-1b9859219/" target="_blank" class="fa fa-linkedin fa-lg fa-small padding-right"></a>
     </div>
   </footer>
 </body>

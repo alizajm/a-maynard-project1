@@ -1,0 +1,187 @@
+/*stylesheets*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  .logo {
+    width: 140px;        /* by default, align to the left */
+    display: block; 
+    justify-content: center;    /* center */
+    margin-left: auto;  /* center */
+    margin-right: auto; /* center */
+  }
+  
+  nav > div > ul {
+    list-style: none;
+  }
+  
+  a {
+    color: #777777;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px 5px 20px;
+  }
+  
+  a:hover {
+    color: #ff3806;
+    cursor: grab;
+    background-color: #ffffff;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: none;
+    /* hide dropdown menu and button in bigger screen size */
+    top: 0;
+    /* top right bottom left work with position:absolute, set an absolute position where to put the dropdown menu */
+    /*left: 0;*/
+    /* by default, always align to left */
+    right: 0;
+    /* if dropdown is set to right, dropdown-content should be set to right */
+  }
+  
+  .dropbtn {
+    background-color: rgba(0, 102, 102, 0);
+    color: #777777;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    line-height: normal;
+  }
+  
+  .dropbtn:hover {
+    color: #ffffff;
+  }
+  
+  .dropdown-content {
+    display: none;
+    /* set display to none, so dropdown menu won't show till hover dropdown */
+    position: absolute;
+    right: 0;
+    /* if dropdown is set to right, dropdown-content should be set to right */
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*z-index: 1;*/
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    line-height: normal;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ffffff;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .active-page {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+    
+  .active-menu-item {
+    background-color: #ffffff;
+  }
+  
+  .padding-right {
+    padding-right: 15px;
+  }
+  
+  .to-top {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .background-image {
+    justify-content: center;
+    background-size: cover;
+
+  }
+  div.to-top a {
+    border-bottom: none;
+  }
+  
+  footer > div.social-icon {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 255, 255);
+  }
+  body, html {
+    margin: 0;
+    padding:0%;
+    height: 100%;
+  }
+  footer a {
+    border-bottom: none;
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* pam added to make the nav menu vertically aligns with the logo */
+  nav > div.horizontal-nav {
+    padding-top: 40px; 
+    padding-bottom: 40px;
+  }
+
+  /* pam added to remove the vertical align when the nav menu go under the logo when browser width around 800px */
+  @media screen and (max-width: 800px) {
+    nav > div.horizontal-nav {
+      padding: 0;
+    }
+  }
+  
+  /* pam changed the original @media screen and (max-width: 500px) to (max-width: 620px) 
+      because the nav menu starts wrapping to next line when browser width around 620px
+  */
+  @media screen and (max-width: 620px) {
+    .logo {
+      width: 30px;
+    }
+  
+    nav > div.horizontal-nav {
+      display: none;
+      /* hide the nav bar in small screen size */
+    }
+  
+    nav {
+      /* padding: top right bottom left */
+      padding: 50px 0px 0px 0px;
+    }
+  
+    .dropdown {
+      display: block;
+      /* show dropdown menu and button in small screen size */
+    }
+  }

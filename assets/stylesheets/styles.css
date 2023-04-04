@@ -15,10 +15,17 @@
     justify-content: center;    /* center */
     margin-left: auto;  /* center */
     margin-right: auto; /* center */
+    
   }
   
   nav > div > ul {
     list-style: none;
+    float:right;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   
   a {
@@ -169,3 +176,4 @@
       /* show dropdown menu and button in small screen size */
     }
   }
+  

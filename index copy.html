@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>ALIZA MAYNARD</title>
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <!-- pam made changes to nav menu to vertical align with logo on line 14 to 24 below, 
+    Aliza will need to make the same changes for all other pages -->
+  <nav class="flex-container">
+    <div>
+      <a href="index.html"><img class="logo" src="./assets/images/logofinal.jpg" alt="ALIZA MAYNARD" /></a>
+    </div>
+    <div class="horizontal-nav">
+      <a href="page-2.html">ABOUT</a>
+      <a href="page-3.html">SUPPLIES</a>
+      <a href="page-4.html">PORTFOLIO</a>
+      <a href="page-5.html">HISTORY</a>
+      <a href="page-6.html">INFLUENCES</a>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown" class="sticky">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="#" class="active-menu-item"></a>
+        <a href="Page-2.html">ABOUT</a>
+        <a href="Page-3.html">SUPPLIES</a>
+        <a href="Page-4.html">PORTFOLIO</a>
+        <a href="Page-5.html">HISTORY</a>
+        <a href="Page-6.html">INFLUENCES</a>
+      </div>
+    </div>
+  </nav>
+  <section style="width: auto; padding:0px;">
+    <article style="width: 100%; float: left; ">
+      <div style="border-right: 1px solid rgb(181, 181, 181);">
+        <!-- TODO: add content -->
+      </div>
+      <div class="background-image"></div>
+      <style>
+      .background-image {
+        background-image: url(./assets/images/IMG_4506.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 130vh;
+        margin:0;
+        padding:0;
+      }
+      </style>
+    </article>
+    <aside style="width: 30%; float: right; padding-left: 20px;">
+    </aside>
+  </section>
+  <div class="to-top"><a href="#">©2023 ALIZA MAYNARD. All rights reserved. No part of this website may be reproduced without permission.</a></div>
+  <footer style="width: 100%;">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-small padding-right">
+      </a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-small padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-small padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-small padding-right"></a>
+    </div>
+  </footer>
+</body>
+</html>

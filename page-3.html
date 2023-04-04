@@ -18,7 +18,7 @@
           <a href="page-2.html">ABOUT</a>
         </li>
         <li>
-          <a href="#" class="active-page">CONTACT</a>
+          <a href="page-3.html" class="active-page">SUPPLIES</a>
         </li>
         <li>
           <a href="page-4.html">PORTFOLIO</a>
@@ -30,6 +30,7 @@
           <a href="page-6.html">INFLUENCES</a>
         </li>
       </ul>
+
     </div>
     <!-- dropdown-menu -->
     <div class="dropdown">
@@ -37,7 +38,7 @@
       <div class="dropdown-content">
         <a href="index.html">ALIZA MAYNARD</a>
         <a href="Page-2.html">ABOUT</a>
-        <a href="#" class="active-menu-item">CONTACT</a>
+        <a href="#" class="active-menu-item">SUPPLIES</a>
         <a href="Page-4.html">PORTFOLIO</a>
         <a href="Page-5.html">HISTORY</a>
         <a href="Page-6.html">INFLUENCES</a>
@@ -46,28 +47,223 @@
   </nav>
   <section style="width: auto; padding:20px;">
     <article style="width: 70%; float: left; ">
-      <div style="border-right: 1px solid rgb(181, 181, 181);">
+      <div style="border-right: 0px solid rgb(181, 181, 181);">
         <!-- TODO: add content -->
-        hello page-3.html
       </div>
     </article>
-    <aside style="width: 30%; float: right; padding-left: 20px;">
-      <div>
-        hello class
-      </div>
-    </aside>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Table Sortable</title>
+      <style>
+        table#your-table-items {
+          border-collapse: collapse;
+          /* in inspector mode - easier to see the difference between collapse and no collapse */
+          border: 1px solid rgba(154, 154, 154, 0.75);
+          text-align: center;
+        }
+    
+        table#your-table-items th:nth-child(1),
+        table#your-table-items td:nth-child(1) {
+          width: 35%;
+        }
+    
+        table#your-table-items th:nth-child(2),
+        table#your-table-items td:nth-child(2) {
+          width: 30%;
+        }
+    
+        table#your-table-items th:nth-child(3),
+        table#your-table-items td:nth-child(3) {
+          width: 20%;
+        }
+    
+        table#your-table-items th:nth-child(4),
+        table#your-table-items td:nth-child(4) {
+          width: 15%;
+        }
+    
+        table#your-table-items thead {
+          font-size: 0.7em;
+          text-transform: uppercase;
+        }
+    
+        table#your-table-items thead th {
+          color: #000000;
+          background-color: #ffffff99;
+          padding: 8px;
+        }
+    
+        table#your-table-items thead th:hover {
+          color: #000000;
+          background-color: #ff3806;
+          cursor: pointer;
+        }
+    
+        table#your-table-items thead th.tablesorter-headerAsc,
+        table#your-table-items thead th.tablesorter-headerDesc {
+          background-color: rgba(0, 102, 102, 0.8);
+        }
+    
+        table#your-table-items tbody {
+          font-size: 0.9em;
+          line-height: 15px;
+        }
+    
+        /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
+        /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
+        table#your-table-items tbody tr:nth-child(even) {
+          background: rgba(154, 154, 154, 0.25);
+        }
+    
+        table#your-table-items tbody tr:hover {
+          color: #fff;
+          background-color: #339999;
+        }
+    
+        table#your-table-items tbody td {
+          padding: 8px 20px;
+          border-top: 1px solid rgba(154, 154, 154, 0.75);
+          border-right: 1px solid rgba(154, 154, 154, 0.75);
+        }
+    
+        table#your-table-items tbody td img {
+          width: 100px;
+          margin: 0 10px 0 0;
+          border: 1px solid rgba(154, 154, 154, 0.75);
+        }
+      </style>
+    </head>
+    
+    <body>
+      <article>
+        <div>
+          <h1><br><br>PRINTING SUPPLIES</h1>
+          
+          <p>
+            This is a brief list of tools and/or supplies that are often used in various forms
+            of printmaking. <br> Depending on the technique of printing you are attempting, the tools will differ. <br><br>
+          </p>
+          <table id="your-table-items">
+            <thead>
+              <tr>
+                <th>Tool</th>
+                <th>Name</th>
+                <th>Purpose</th>
+                <th>Print Technique</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="./assets/images/SQUEEGEE_a7427c7a-17ba-4bb3-b008-86239e9797d5_1024x1024.webp" alt="Squeegee" /></td>
+                <td>Squeegee</td>
+                <td>The squeegee is used to pull ink <br>back and forth across a screen</td>
+                <td>Screen Printing</td>
+              </tr>
+              <tr>
+                <td><img src="./assets/images/SRB4_01.jpg" alt="Brayer" /></td>
+                <td>Brayer </td>
+                <td>A brayer is used to roll ink over a plate, linocut or woodcut. Any surface that is being used to print, as it provides a reliably even coat of ink.</td>
+                <td>Various</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/images/9740734-main-530Wx530H.jpg" alt="Etching Tool" />
+                </td>
+                <td>Etching Tool</td>
+                <td>An etching tool is used to carve out your desired drawing onto a printing plate usually used for some form of intaglio printmaking.</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/images/9740734-main-530Wx530H.jpg" alt="Etching Tool" />
+                </td>
+                <td>Etching Tool</td>
+                <td>An etching tool is used to carve out your desired drawing onto a printing plate usually used for some form of intaglio printmaking.</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/images/9740734-main-530Wx530H.jpg" alt="Etching Tool" />
+                </td>
+                <td>Etching Tool</td>
+                <td>An etching tool is used to carve out your desired drawing onto a printing plate usually used for some form of intaglio printmaking.</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/images/9740734-main-530Wx530H.jpg" alt="Etching Tool" />
+                </td>
+                <td>Etching Tool</td>
+                <td>An etching tool is used to carve out your desired drawing onto a printing plate usually used for some form of intaglio printmaking.</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/images/9740734-main-530Wx530H.jpg" alt="Etching Tool" />
+                </td>
+                <td>Etching Tool</td>
+                <td>An etching tool is used to carve out your desired drawing onto a printing plate usually used for some form of intaglio printmaking.</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/images/9740734-main-530Wx530H.jpg" alt="Etching Tool" />
+                </td>
+                <td>Etching Tool</td>
+                <td>An etching tool is used to carve out your desired drawing onto a printing plate usually used for some form of intaglio printmaking.</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/images/9740734-main-530Wx530H.jpg" alt="Etching Tool" />
+                </td>
+                <td>Etching Tool</td>
+                <td>An etching tool is used to carve out your desired drawing onto a printing plate usually used for some form of intaglio printmaking.</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/images/9740734-main-530Wx530H.jpg" alt="Etching Tool" />
+                </td>
+                <td>Etching Tool</td>
+                <td>An etching tool is used to carve out your desired drawing onto a printing plate usually used for some form of intaglio printmaking.</td>
+                <td>Medium</td>
+              </tr>
+    
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+      <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/JavaScript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+      <!-- BEG JavaScript -->
+      <script>
+        $(document).ready(function () {
+          $("table#your-table-items").tablesorter({
+            sortList: [[2, 1]],
+            CssAsc: "tablesorter-headerAsc",
+            CssDesc: "tablesorter-headerDesc"
+          });
+        });
+      </script>
+      <!-- END JavaScript -->
+    </body>
   </section>
   <div class="to-top"><a href="#">Top</a></div>
   <footer style="width: 100%;">
     <div class="social-icon">
-      <!-- Facebook -->
-      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-small padding-right"></a>
-      <!--Instagram-->
-      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-small padding-right"></a>
-      <!-- Twitter -->
-      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-small padding-right"></a>
-      <!-- Linkedin -->
-      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-small padding-right"></a>
+     <!-- Facebook -->
+     <a href="https://www.facebook.com/aliza.maynard/" target="_blank" class="fa fa-facebook-f fa-lg fa-small padding-right">
+    </a>
+    <!--Instagram-->
+    <a href="https://www.instagram.com/alizamaynard" target="_blank" class="fa fa-instagram fa-lg fa-small padding-right"></a>
+    <!-- Twitter -->
+    <a href="https://twitter.com/" target="_blank" class="fa fa-twitter fa-lg fa-small padding-right"></a>
+    <!-- Linkedin -->
+    <a href="https://www.linkedin.com/in/aliza-maynard-1b9859219/" target="_blank" class="fa fa-linkedin fa-lg fa-small padding-right"></a>
     </div>
   </footer>
 </body>
