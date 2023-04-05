@@ -1,219 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
-  <title>ALIZA MAYNARD</title>
-</head>
-<body>
-  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
-  <a href="index.html"><img class="logo" src="./assets/images/logofinal.jpg" alt="ALIZA MAYNARD" /></a>
-  <nav>
-    <div class="horizontal-nav">
-      <ul class="flex-container">
-        <li>
-          <a href="page-2.html">ABOUT</a>
-        </li>
-        <li>
-          <a href="page-3.html">SUPPLIES</a>
-        </li>
-        <li>
-          <a href="page-4.html" class="active-page">PORTFOLIO</a>
-        </li>
-        <li>
-          <a href="page-5.html">HISTORY</a>
-        </li>
-        <li>
-          <a href="page-6.html">INFLUENCES</a>
-        </li>
-      </ul>
-    </div>
-    <!-- dropdown-menu -->
-    <div class="dropdown">
-      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
-      <div class="dropdown-content">
-        <a href="index.html">ALIZA MAYNARD</a>
-        <a href="Page-2.html">ABOUT</a>
-        <a href="Page-3.html">SUPPLIES</a>
-        <a href="page-4.html" class="active-menu-item">PORTFOLIO</a>
-        <a href="Page-5.html">HISTORY</a>
-        <a href="Page-6.html">INFLUENCES</a>
-      </div>
-    </div>
-  </nav>
-
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Scrollable Area</title>
-    <style>
-      div.scrolling {
-        width: 500px;
-        height: 300px;
-        padding: 20px;
-        border: none;
-        overflow: auto;
-        /* auto - similar to scroll, but it adds scrollbars only when necessary */
-        /* overflow is shortcut for overflow-y and overflow-x */
-        /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_overflow-x */
-        /* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/stylesheets/styles.css"
+    />
+    <title>ALIZA MAYNARD</title>
   </head>
-  
-<head>
-<title>PORTFOLIO</title>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<style>
-.container {
-  max-width: 1500px;
-  margin: auto;
-  padding-top: 50px;
-  padding-left: 100px;
-  padding-right:100px;
-  padding-bottom: 0px;
-
-}
-
-.slick-next:before,
-.slick-prev:before {
-  position:relative;
-  color:#ff3806;
-  padding-top:0px
-}
-
-.image-responsive {
-  padding-top: 50px;
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-bottom: 0px;
-  justify-content: center;
-}
-
-.slick-list {
-  margin: 0 5px;
-}
-
-.slick-slide {
-  padding: 0 5px;
-}
-
-.your-class div p {
-  margin: 5px 0 0;
-  text-align: center;
-}
-</style>
-</head>
-
-<body>
-<h1>
-</h1>
-
-<div class="container">
-<div class="your-class">
-  
-  <div>
-    <img class="image-responsive" src="./assets/images/IMG_4506.jpg" />
-  </div>
-  <div>
-    <img class="image-responsive" src="./assets/images/IMG_2472.jpg" />
-  </div>
-  <div>
-    <img class="image-responsive" src="./assets/images/IMG_2382.jpg" />
-  </div>
-  <div>
-    <img class="image-responsive" src="./assets/images/12DA2428-F574-4577-8A9E-A203DA338A46.jpg" />
-  </div>
-  <div>
-    <img class="image-responsive" src="./assets/images/IMG_4519.jpg" />
-  </div>
-  <div>
-    <img class="image-responsive" src="./assets/images/IMG_4509.jpg" />
-  </div>
-  <div>
-    <img class="image-responsive" src="./assets/images/603310C2-E97A-4B6A-ADDF-EDCE7C652B5F.JPG" />
-  </div>
-  <div>
-    <img class="image-responsive" src="./assets/images/IMG_6061.jpg" />
-  </div>
-  <div>
-    <img class="image-responsive" src="./assets/images/IMG_5772.JPG" />
-  </div>
-</div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-$(document).ready(function () {
-  $('.your-class').slick({
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  });
-});
-</script>
-</body>
   <body>
-    <article>
-      <h3>ABOUT THE WORK</h3>
-      <div class="scrolling">
-        <p>
-         When I found printmaking I was not prepared for the effect it would have on my practice. I took a class at UCLA in intaglio printmaking,
-         which is the process of applying a ground to a copper plate, drawing your image using an etching tool, and the area you carved away
-         is what will then be etched into the plate when applied to acid. The drawing itself will become a divet in the plate, providing a space for the ink to sit in before printing. 
-         The lovely thing about this technique is that everything is reversed once printed. Think of a stamp. <br><br>Depedning on the ground used, 
-         the print will have more or less textural qualities. Softground is sensitive, making any small touch on the plate cause a mark which will then be etched and visible in the final print. 
-         My favorite thing about this medium is it's unpredicatablity. You may spend hours drawing your image, and once printed it presents completely differently. <br><br>
-         This has assisted me spectacularly because I have a tendency to need control. This obsession with perfection restricts my work, at times can make it work for me, 
-         but the result I prefer does not align with this process. Printmaking has given me the freedom to experiment and no matter how great the image itself is, the 
-         additonal textures and effects caused by the process alone leave me greatly satisfied. 
-        </p>
-        <p>
-          My work is always in flux. I don't like to hold myself to any specific exploration. Whatever interests me, monthly, daily, hourly, is what guides my process.
-          I am fascinated with form, mundanity, everyday expereinces, and childhood. There will always be more, or less, incorporated, but I prefer to let the viewer decide for themselves
-          what the work is evoking. Since I already tend to overthink, I like my practice to be fluid and spontaneous. Hopefully that translates, while technique is 
-          absolutely valued along the way. 
-        </p>
+    <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+    <a href="index.html"
+      ><img
+        class="logo"
+        src="./assets/images/logofinal.jpg"
+        alt="ALIZA MAYNARD"
+    /></a>
+    <nav>
+      <div class="horizontal-nav">
+        <ul class="flex-container">
+          <li>
+            <a href="page-2.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="page-3.html">SUPPLIES</a>
+          </li>
+          <li>
+            <a href="page-4.html" class="active-page">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="page-5.html">HISTORY</a>
+          </li>
+          <li>
+            <a href="page-6.html">INFLUENCES</a>
+          </li>
+        </ul>
       </div>
-    </article>
+      <!-- dropdown-menu -->
+      <div class="dropdown">
+        <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+        <div class="dropdown-content">
+          <a href="index.html">ALIZA MAYNARD</a>
+          <a href="Page-2.html">ABOUT</a>
+          <a href="Page-3.html">SUPPLIES</a>
+          <a href="page-4.html" class="active-menu-item">PORTFOLIO</a>
+          <a href="Page-5.html">HISTORY</a>
+          <a href="Page-6.html">INFLUENCES</a>
+        </div>
+      </div>
+    </nav>
+
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Scrollable Area</title>
+      <style>
+        div.scrolling {
+          width: 500px;
+          height: 300px;
+          padding: 20px;
+          border: none;
+          overflow: auto;
+          /* margin: 0 auto; */ /* NOTE: commented this out for now but you will need this if you put the scrolling section on it's own and want to center it */
+          /* auto - similar to scroll, but it adds scrollbars only when necessary */
+          /* overflow is shortcut for overflow-y and overflow-x */
+          /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_overflow-x */
+          /* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+        }
+      </style>
+    </head>
+
+    <head>
+      <title>PORTFOLIO</title>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+
+      <style>
+        .container {
+          max-width: 900px; /* NOTE: I messed with this width to make the slideshow smaller but you can change it if you want */
+          /* margin: auto; */ /* NOTE: I commented out margin auto for putting text & sideshow side by side but you will need this if you decide you don't want them side by side and you want to center the slideshow */
+          padding-top: 30px;
+          padding-left: 100px;
+          padding-right: 100px;
+          padding-bottom: 0px;
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+          position: relative;
+          color: #ff3806;
+          padding-top: 0px;
+        }
+
+        .image-responsive {
+          padding-top: 50px;
+          width: 100%;
+          height: 100%;
+          display: block;
+          padding-bottom: 0px;
+          justify-content: center;
+        }
+
+        .slick-list {
+          margin: 0 5px;
+        }
+
+        .slick-slide {
+          padding: 0 5px;
+          height: 750px;
+          width: 800px /* NOTE: you might want to mess with this if the images are looking distorted */
+        }
+
+        .your-class div p {
+          margin: 5px 0 0;
+          text-align: center;
+        }
+
+        .about-the-work {
+          text-align: center;
+        }
+
+        /* NOTE: this is for displaying the slideshow side by side with the text */
+        .slideshow-and-text {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+      </style>
+    </head>
+
+    <body>
+      <h1></h1>
+
+      <!-- NOTE: added this new class to hold both the slideshow and text -->
+      <div class="slideshow-and-text">
+        <div class="container">
+          <div class="your-class">
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/IMG_4506 copy.jpg"
+              />
+            </div>
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/IMG_2472.jpg"
+              />
+            </div>
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/IMG_2382.jpg"
+              />
+            </div>
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/12DA2428-F574-4577-8A9E-A203DA338A46.jpg"
+              />
+            </div>
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/IMG_4519.jpg"
+              />
+            </div>
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/IMG_4509 copy.jpg"
+              />
+            </div>
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/603310C2-E97A-4B6A-ADDF-EDCE7C652B5F.JPG"
+              />
+            </div>
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/IMG_6061 copy.jpg"
+              />
+            </div>
+            <div>
+              <img
+                class="image-responsive"
+                src="./assets/images/IMG_5772.JPG"
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+        <article class="about-the-work">
+          <h3>ABOUT THE WORK</h3>
+          <div class="scrolling">
+            <p>
+              When I found printmaking I was not prepared for the effect it would have on my practice. I took a class at UCLA in intaglio printmaking,
+              which is the process of applying a ground to a copper plate, drawing your image using an etching tool, and the area you carved away
+              is what will then be etched into the plate when soaked in acid. The drawing itself will become a divet in the plate, providing a space for the ink to sit in before printing. 
+              The lovely thing about this technique is that everything is reversed once printed. Think of a stamp. <br><br>Depending on the ground used, 
+              the print will have more or less textural qualities. Softground is sensitive, making any small touch on the plate cause a mark which will then be etched and visible in the final print. Whereas 
+              hardground is more controlled.<br> <br>
+              My favorite thing about this medium is it's unpredicatablity. You may spend hours drawing your image, and once printed it presents completely differently. <br><br>
+              This has assisted me spectacularly because I have a tendency to need control. This obsession with perfection restricts my work, given at times I can make it work for me, 
+              but the result I prefer does not align with this process. Printmaking has given me the freedom to experiment and no matter how great the image itself is, the 
+              additonal textures and effects caused by the process alone leave me greatly satisfied. 
+             </p>
+             <p>
+               My work is always in flux. I don't like to hold myself to any specific exploration. Whatever interests me, monthly, daily, hourly, is what guides my process.
+               I am fascinated with form, mundanity, everyday experiences, and childhood. There will always be more, or less, incorporated, but I prefer to let the viewer decide for themselves
+               what the work is evoking. Since I already tend to overthink, I like my practice to be fluid and spontaneous. While technique is 
+               absolutely valued along the way, I hope that impulsiveness translates.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+      <script>
+        $(document).ready(function () {
+          $(".your-class").slick({
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          })
+        })
+      </script>
+    </body>
+
+    <section style="width: auto; padding: 20px">
+      <article style="width: 70%; float: left">
+        <div style="border-right: 0px solid rgb(181, 181, 181)">
+          <!-- TODO: add content -->
+        </div>
+      </article>
+      <aside style="width: 30%; float: right; padding-left: 20px">
+        <div></div>
+      </aside>
+    </section>
+    <div class="to-top"><a href="#">©2023 ALIZA MAYNARD. All rights reserved. No part of this website may be reproduced without permission.</a></div>
+    <footer style="width: 100%">
+      <div class="social-icon">
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com/aliza.maynard/"
+          target="_blank"
+          class="fa fa-facebook-f fa-lg fa-small padding-right"
+        >
+        </a>
+        <!--Instagram-->
+        <a
+          href="https://www.instagram.com/alizamaynard"
+          target="_blank"
+          class="fa fa-instagram fa-lg fa-small padding-right"
+        ></a>
+        <!-- Twitter -->
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          class="fa fa-twitter fa-lg fa-small padding-right"
+        ></a>
+        <!-- Linkedin -->
+        <a
+          href="https://www.linkedin.com/in/aliza-maynard-1b9859219/"
+          target="_blank"
+          class="fa fa-linkedin fa-lg fa-small padding-right"
+        ></a>
+      </div>
+    </footer>
   </body>
-  
-  <section style="width: auto; padding:20px;">
-    <article style="width: 70%; float: left; ">
-      <div style="border-right: 1px solid rgb(181, 181, 181);">
-        <!-- TODO: add content -->
-        hello page-4.html
-      </div>
-    </article>
-    <aside style="width: 30%; float: right; padding-left: 20px;">
-      <div>
-        hello class
-      </div>
-    </aside>
-  </section>
-  <div class="to-top"><a href="#">Top</a></div>
-  <footer style="width: 100%;">
-    <div class="social-icon">
-   <!-- Facebook -->
-   <a href="https://www.facebook.com/aliza.maynard/" target="_blank" class="fa fa-facebook-f fa-lg fa-small padding-right">
-  </a>
-  <!--Instagram-->
-  <a href="https://www.instagram.com/alizamaynard" target="_blank" class="fa fa-instagram fa-lg fa-small padding-right"></a>
-  <!-- Twitter -->
-  <a href="https://twitter.com/" target="_blank" class="fa fa-twitter fa-lg fa-small padding-right"></a>
-  <!-- Linkedin -->
-  <a href="https://www.linkedin.com/in/aliza-maynard-1b9859219/" target="_blank" class="fa fa-linkedin fa-lg fa-small padding-right"></a>
-    </div>
-  </footer>
-</body>
 </html>

@@ -47,7 +47,160 @@
   <section style="width: auto; padding:20px;">
     <article style="width: 70%; float: left; ">
       <div style="border-right: 0px solid rgb(181, 181, 181);">
-        <!-- TODO: add content -->
+        
+        <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>Accordion JavaScript</title>
+          <style>
+            article {
+              width: 1200px;
+              float:none;
+              padding: 20px 100px;
+            }
+            .accordion {
+              color: #c2c2c2;
+              cursor: pointer;
+              font-size: 15px;
+              padding-bottom: 10px;
+            }
+      
+            .active,
+            .accordion:hover {
+              color: #ff3806;
+            }
+      
+            .panel {
+              display: none;
+              overflow: hidden;
+            }
+          </style>
+        </head>
+        <body>
+          <article>
+              <div>
+                <h3>HISTORY OF PRINTMAKING</h3>
+                      <div>
+                        <h4><i>INTAGLIO</i></h4>
+                        <h5><u>ETCHING</u></h5>
+                        <p>
+                              Etching is the most popular and most useful technique in printmaking, because it allows a lot of freedom for artistic expression. 
+                          It is a chemical process, in which the matrix is created by submerging a metal plate into an acid or mordant. 
+                          Depending on the type of metal (as with engraving, copper plates and zinc are most widespread), different acids are used, 
+                          most commonly diluted nitric acid, hydrochloric acid, and iron chloride.
+                          <br><br>
+                              Most of these acids are very aggressive and give off toxic fumes, 
+                          with the exception of ferric chloride. Ferric chloride is a type of mordant based on corrosive salt crystals, 
+                          and it has long been valued by printmakers for its safety and accuracy. The process of etching with ferric is very slow, 
+                          but since the end of the 1990s, it has been perfected the Edinburgh Etch, consisting of four parts ferric chloride 
+                          solution and one part citric acid solution, works well on all types of metal plates and at greater speed. 
+                          Innovations like the Edinburgh Etch are part of a growing concern for the environment among contemporary printmakers.
+                </p>
+                <p class="panel">
+                  The plate is covered with an etching ground (tar, asphaltum, oil pastel, and sometimes even spray paint) 
+                  to protect the surface from exposure to the acid, and parts of the ground are then removed to create a drawing. 
+                  The back of the plate can be covered in brown tape to protect it from the acid. Different sizes and types of needles 
+                  and tools can be used to create a sketch on the dried ground (You can use a sharp nail, a cheap option), exposing thinner 
+                  and thicker layers to the acid.
+                  <br> <br>
+                  Once the etching process is finished, the ground is removed with paint thinner or methylated spirits, and printmaking 
+                  ink is applied onto the plate using the same principle of engraving. Depending on the strength of the acid and the length
+                   of exposure (etching) the carved lines in the ground become lighter and darker lines on the print. If the plate is wiped 
+                   thoroughly before printing, the print looks very much like an ink drawing. Intaglio prints can only be printed using a printmaking
+                    press, and the process requires higher quality 150-300g printmaking paper which can withstand being submerged in water.
+                    <br><br>
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/0jzVjjRudfo" title="How To Make An Etching | National Museums Liverpool"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </p>
+                <div class="accordion" style="text-align: right;">More</div>
+              </div>
+              <div>
+                <h5><u>AQUATINT</u></h5>
+                <p>
+                  The aquatint process is younger than engraving and etching as it took artists more time to discover the right sequence of steps
+                   and recipes. The exact date and circumstances of the discovery are unclear, but no historical account of aquatint goes back
+                    further than the second half of the 18th century. Visually, the technique looks very similar to ink wash and it can be used 
+                    to represent brushstrokes, although the differences in value between surfaces are sharper than in aquarelle and ink painting.
+                    <br><br>
+                    The process itself hasn't changed much over the past two and a half centuries. In order to achieve balanced exposure to acids, 
+                    the metal plate (prepared in the same way as with other techniques, making sure there is no grease on the surface) is covered 
+                    by a thin layer of powdered rosin or colophonium. The powder is heated up at a high temperature until it melts, forming 
+                    protective droplets that stick to the metal plate (matrix).
+                </p>
+                <div class="panel">
+                  <span style="width: 500px; word-wrap: break-word;">
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/JQZ8za2ey0M" title="Aquatint| 2-Minute Tour"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                  </span>
+                </div>
+                <div class="accordion" style="text-align: right;">More</div>
+              </div>
+              <div>
+                <h5><u>DRYPOINT</u></h5>
+                <p>
+                  Drypoint is a popular type of intaglio printmaking because it's a non-toxic, mechanical method, less complicated than etching 
+                  and less physically demanding than engraving. It is often used in addition to other techniques as it is perfect for initial 
+                  sketching on the plate, or fixing small mistakes on an etched matrix.
+                    <br><br>  
+                  The matrix is usually a copper or zinc plate (although new materials like plexiglass are nowadays becoming increasingly popular)
+                   and lines are scratched directly onto it with a steel needle making it much closer to drawing than any other technique. 
+                   While it is great for making fresh sketches, drypoint is not very useful for creating a large number of impressions because 
+                   the needle doesn't scratch far beneath the surface of the plate.
+                </p>
+                <div class="panel">
+                  <iframe width="500" height="315" src="https://www.youtube.com/embed/3mOAAohdwUI" title="Drypoint Etching How To"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="accordion" style="text-align: right;">More</div>
+              </div>
+              </div>
+          </article>
+        </body>
+        <!-- BEG JavaScript -->
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.previousElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+                this.innerHTML = "More";
+              } else {
+                panel.style.display = "block";
+                this.innerHTML = "Less";
+              }
+            });
+          }
+        </script>
+        <!-- END JavaScript -->
+            
+          </article>
+        </body>
+        <!-- BEG JavaScript -->
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.previousElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+                this.innerHTML = "More";
+              } else {
+                panel.style.display = "block";
+                this.innerHTML = "Less";
+              }
+            });
+          }
+        </script>
+        <!-- END JavaScript -->
+        
       
       </div>
     </article>
